@@ -630,9 +630,21 @@
   .modal-icon {
     fill: var(--text-color);
   }
+  .modal-form {
 
-  
-  
+  }
+  .modal-form-group {
 
+  }  
+  .modal-form-Label {
 
-  
+  } 
+  .modal-form-wrapper {
+
+  }
+  .modal-form-field {
+
+  }
+  .modal-form-icon {
+    
+  }
