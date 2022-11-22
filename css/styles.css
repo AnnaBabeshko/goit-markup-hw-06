@@ -646,5 +646,11 @@
 
   }
   .modal-form-icon {
-    
+
+  }
+  .modal-form-massage {
+    resize: none;
+  }
+  .modal-form-checkbox {
+
   }
