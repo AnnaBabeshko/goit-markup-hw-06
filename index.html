@@ -565,6 +565,20 @@
             </li>
           </ul>
         </div>
+        <div class="footer-email">
+          <p class="footer-text">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+          <form class="footer-form" name="footer_form">
+            <input class="footer-form-field" type="email" name="user_mail" id="user_mail" placeholder="E-mail" required />
+            <button class="form-btn" type="submit">
+              <p class="form-btn-text">Підписатися</p>
+              <svg class="icon-teleg" width="24" height="24">
+                <use href="./images/icons.svg#icon-teleg"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+
       </div>
     </footer>
 
@@ -576,12 +590,12 @@
             <use href="./images/icons.svg#icon---18-2-1"></use>
           </svg>
         </button>
-        <strong>Залиште свої дані, ми вам передзвонимо</strong>
+        <strong class="modal-neim">Залиште свої дані, ми вам передзвонимо</strong>
         <form class="modal-form" name="modal_form">
           <div class="modal-form-group" role="group">
             <Label class="modal-form-Label" for="user_name">Ім'я</Label>
             <div class="modal-form-wrapper">
-              <input  class="modal-form-field" type="text" name="user_name" id="user_name" />
+              <input  class="modal-form-field" type="text" name="user_name" id="user_name" required/>
               <svg class="modal-form-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
@@ -609,7 +623,7 @@
             <input class="modal-form-checkbox" type="checkbox" id="user_agreement" />
             <label for="user_agreement">Погоджуюся з розсилкою та приймаю<a href="">Умови договору"</a></label>
           </div>
-          <button class="submit" class="hiro-btn">
+          <button class="form-btn" type="submit">
             Відправити
           </button>
 
