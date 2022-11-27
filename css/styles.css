@@ -709,7 +709,7 @@
     color: var(--title-text-color);
     margin-bottom: 4px;
   } 
-  
+    
   .modal-form-wrapper {
     position: relative;
     margin-bottom: 10px;
@@ -743,6 +743,8 @@
     resize: none;
     width: 100%;
     height: 120px;
+    outline: unset;
+    background-color: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: unset;
