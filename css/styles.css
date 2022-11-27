@@ -720,8 +720,9 @@
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    outline: unset;
+    transition: var(--anim-fast);
   }
-  .modal-form-field:hover,
   .modal-form-field:focus {
     border-color: var(--accent-color);
   }
@@ -740,7 +741,23 @@
 
   .modal-form-massage {
     resize: none;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: unset;
+    transition: var(--anim-fast);
   }
+  
+  .modal-form-massage::placeholder {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    
+  }
+  
+  
   .modal-form-checkbox {
 
   }
@@ -755,3 +772,5 @@
     margin-right: auto;
     margin-bottom: 40px;
   }
+
+  
