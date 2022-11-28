@@ -34,7 +34,7 @@
         <nav>
           <ul class="list-nav list">
             <li>
-              <a href="./index.html" class="link nev-link  current">Студія</a>
+              <a href="./index.html" class="link nev-link current">Студія</a>
             </li>
             <li>
               <a href="./portfolio.html" class="nev-link link">Портфоліо</a>
@@ -568,17 +568,24 @@
         <div class="footer-email">
           <p class="footer-text">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
           <form class="footer-form" name="footer_form">
-            <input class="footer-form-field" type="email" name="user_mail" id="user_mail" placeholder="E-mail" required />
+            <input
+              class="footer-form-field"
+              type="email"
+              name="user_mail"
+              id="user_mail"
+              placeholder="E-mail"
+              required
+            />
             <button class="form-btn" type="submit">
+             <div>
               <p class="form-btn-text">Підписатися</p>
               <svg class="icon-teleg" width="24" height="24">
                 <use href="./images/icons.svg#icon-teleg"></use>
               </svg>
+              </div>
             </button>
           </form>
         </div>
-
-
       </div>
     </footer>
 
@@ -590,63 +597,75 @@
             <use href="./images/icons.svg#icon---18-2-1"></use>
           </svg>
         </button>
-        <strong class="modal-neim">Залиште свої дані, ми вам передзвонимо</strong>
+        <strong class="modal-neim"
+          >Залиште свої дані, ми вам передзвонимо</strong
+        >
         <form class="modal-form" name="modal_form">
           <div class="modal-form-group" role="group">
-            <Label class="modal-form-Label" for="user_name">Ім'я</Label>
+            <label class="modal-form-Label" for="user_name">Ім'я</label>
             <div class="modal-form-wrapper">
-              <input  
-                class="modal-form-field" 
-                type="text" 
-                name="user_name" 
-                id="user_name" 
+              <input
+                class="modal-form-field"
+                type="text"
+                name="user_name"
+                id="user_name"
                 required
-                minlength="2"
-                />
+                minlength="3"
+              />
               <svg class="modal-form-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
             </div>
-            <Label class="modal-form-Label" for="user_phone">Телефон</Label>
+            <label class="modal-form-Label" for="user_phone">Телефон</label>
             <div class="modal-form-wrapper">
-              <input  
-                class="modal-form-field" 
-                type="tel" 
-                name="user_phone" 
+              <input
+                class="modal-form-field"
+                type="tel"
+                name="user_phone"
                 id="user_phone"
                 required
-
-                />
+                minlength="10"
+              />
               <svg class="modal-form-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
               </svg>
             </div>
-            <Label class="modal-form-Label" for="user_mail">Пошта</Label>
+            <label class="modal-form-Label" for="user_mail">Пошта</label>
             <div class="modal-form-wrapper">
-              <input class="modal-form-field" type="email" name="user_mail" id="user_mail" /> 
+              <input
+                class="modal-form-field"
+                type="email"
+                name="user_mail"
+                id="user_mail"
+              />
               <svg class="modal-form-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
               </svg>
-              
             </div>
-            <Label class="modal-form-Label" for="user_massage">Коментар</Label>
-            <textarea 
-              class="modal-form-massage" 
+            <label class="modal-form-Label" for="user_massage">Коментар</label>
+            <textarea
+              class="modal-form-massage"
               name="user_massage"
               id="user_massage"
               rows="6"
               placeholder="Введіть текст"
-              >
+            >
             </textarea>
           </div>
-          <div role="group">
-            <input class="modal-form-checkbox" type="checkbox" id="user_agreement" />
-            <label for="user_agreement">Погоджуюся з розсилкою та приймаю<a href="">Умови договору"</a></label>
+          <div class="modal-form-agreement" role="group">
+            <input
+              class="modal-form-checkbox"
+              type="checkbox"
+              id="user_agreement"
+            />
+            <label class="modal-form-agreement-disc" for="user_agreement"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="modal-form-agreement-linc" href=""
+                >Умови договору"</a
+              ></label
+            >
           </div>
-          <button class="form-btn" type="submit">
-            Відправити
-          </button>
-
+          <button class="form-btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
