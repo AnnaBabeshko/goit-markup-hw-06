@@ -428,10 +428,7 @@
   }
   .footer-email {
     margin-left: auto;
-    /*margin-bottom: 83px;
-    margin-top: 83px;*/
   }
-  
   .footer-email input {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -443,7 +440,6 @@
     line-height: calc(20/16);
     padding: 16px 15px;
   }
-
   .footer-text {
     font-weight: 700;
     font-size: 14px;
@@ -453,12 +449,10 @@
     margin-bottom: 15px;
     color: var(--background-color);
   }
-  
   .footer-form-field {
     color: var(--background-color)  ;
     outline: none;
   }
-    
   .form-btn {
     position: relative;
     font-family: inherit;
@@ -480,27 +474,19 @@
     background-color: var(--acent-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
   .form-btn:hover,
   .form-btn:focus {
-      background-color: var(--grey-color);
+     background-color: var(--grey-color);
   }
-  
   .footer-form {
     display: flex;
     gap: 10px;
   }
-
   .icon-teleg {
     position: absolute;
     fill: var(--background-color);
     margin-left: 10px;
   }
-  
-  
-  
-  
-  
   /*----------------PORT-FILTR----------*/
   .port-btn-container {
     display: flex;
@@ -733,8 +719,7 @@
     position: relative;
     margin-bottom: 10px;
   }
-  .modal-form-field,
-  .modal-form-massage {
+  .modal-form-field {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -744,10 +729,7 @@
     outline: 1px solid transparent;
     transition: outline var(--anim-fast), box-shadow;
   }
-  .modal-form-field:focus {
-    outline-color: var(--accent-color);
-    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.25),
-  }
+  
   .modal-form-icon {
     position: absolute;
     left: 12px;
@@ -758,17 +740,23 @@
   .modal-form-field:focus + .modal-form-icon {
     fill: var(--accent-color);
   }
-  .modal-form-massage {
-    display: block;
+  .modal-form-message {
+    width: 100%;
+    height: 120px;
     resize: none;
-    height: 120px; 
-    padding: 16px;
-    margin-bottom: 20px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    padding-right: 42px;
+    outline: 1px solid transparent;
+    transition: outline var(--anim-fast), box-shadow;
   }
-  .modal-form-massage:focus {
-    border-color: var(--accent-color);
+  .modal-form-message:focus {
+      outline-color: var(--accent-color);
+      box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.25),
   }
   .modal-form-massage::placeholder {
+    margin-top: 10px;
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
