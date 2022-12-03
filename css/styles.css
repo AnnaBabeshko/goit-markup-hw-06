@@ -452,6 +452,8 @@
   .footer-form-field {
     color: var(--background-color)  ;
     outline: none;
+    display: block;
+    margin-right: 10px;
   }
   .form-btn {
     position: relative;
@@ -480,7 +482,6 @@
   }
   .footer-form {
     display: flex;
-    gap: 10px;
   }
   .icon-teleg {
     position: absolute;
@@ -661,7 +662,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     width: 528px;
-    min-height: 581px;
+    height: 581px;
     padding: 40px;
     background-color: var(--background-color);
     border-radius: 10px;
@@ -688,6 +689,9 @@
   }
   .modal-icon {
     fill: var(--text-color);
+  }
+  .modal-icon:hover {
+    fill: var(--accent-color);
   }
   .modal-neim {
     display: block;
@@ -726,10 +730,12 @@
     border-radius: 4px;
     padding-left: 42px;
     padding-right: 42px;
-    outline: 1px solid transparent;
-    transition: outline var(--anim-fast), box-shadow;
+    outline: transparent;
+    transition: border-color var(--anim-fast),
   }
-  
+  .modal-form-field:focus {
+      border-color: var(--accent-color);
+  }
   .modal-form-icon {
     position: absolute;
     left: 12px;
@@ -746,14 +752,12 @@
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding-left: 42px;
-    padding-right: 42px;
-    outline: 1px solid transparent;
-    transition: outline var(--anim-fast), box-shadow;
+    padding: 15px 16px;
+    outline: transparent;
+    transition: border-color var(--anim-fast),
   }
   .modal-form-message:focus {
-      outline-color: var(--accent-color);
-      box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.25),
+      border-color: var(--accent-color);
   }
   .modal-form-massage::placeholder {
     margin-top: 10px;
@@ -809,7 +813,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
     align-items: center;
   }
 
